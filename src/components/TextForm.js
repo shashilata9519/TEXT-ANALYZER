@@ -3,6 +3,7 @@ import "../App.css";
 
 export default function () {
   const [text, setText] = useState("");
+  
 
   const handleUpper = () => {
     setText(text.toUpperCase());
@@ -71,7 +72,7 @@ export default function () {
         </div>
         <div className="container">
           <h3>PREVIEW</h3>
-          <p>{text}</p>
+          <p>{text.length>0?text:'Enter in the above textarea'}</p>
         </div>
       </div>
     </>
